@@ -47,14 +47,12 @@ html {
 }
 
 .hex {
-    margin-top: 73px;
     width: 208px;
     height: 120px;
     background-color: #a6b8bd;
     position: relative;
     float: left;
-    margin-right: .5em;
-    margin-left: .5em;
+    margin: 73px .5em 0;
 }
 
 .hex::after {
@@ -86,7 +84,7 @@ select, option {
  }
 
  input[type=checkbox] {
-    -webkit-appearance: none;
+    -webkit-appearance: ;
     position: absolute;
     width: 30px;
     height: 30px;
@@ -110,10 +108,28 @@ select, option {
     top: -87px;
   }
 
-  .checkbox3 {
+ .checkbox3 {
     right: -17px;
     top: -28px;
   }
+ 
+  .checkbox4 {
+    right: 86px;
+    top: 156px;
+    z-index: 1;
+ }
+
+ .checkbox5 {
+    right: 197px;
+    top: 96px;
+    z-index: 1;
+ }
+
+ .checkbox6 {
+    right: -19px;
+    top: 96px;
+    z-index: 1;
+ }
   
   label img {
     position: absolute;
@@ -124,6 +140,10 @@ select, option {
     display: block;
   }
 
+  #checkOne, #checkTwo, #checkThree, #checkFour, #checkFive, #checkSix {
+    display: none;
+  }
+/*
  #checkOne {
     right: 197px;
     top: -28px;
@@ -165,8 +185,6 @@ select, option {
     z-index: 1;
  }
 
-
-/*
 .hex:hover::after {
     border-top: 60px solid #ebd65f;
 }
