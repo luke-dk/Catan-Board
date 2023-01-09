@@ -161,7 +161,7 @@ select, option {
     .hex {
         width: 17.9vw;
         height: 10.5vw;
-        margin: 6.08vw .5em 0;
+        margin: 6.08vw .69vw 0;
     }
     .hex::before {
         border-bottom: 5vw solid #a6b8bd;
