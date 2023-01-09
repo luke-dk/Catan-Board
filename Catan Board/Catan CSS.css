@@ -3,34 +3,43 @@ html {
     background-image: url('Photos/top-view-blue-water-swimming-pool-background-small-bubbles-127993839.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 90% 90%;
+    background-size: 100% 100%;
   }
 .body {
     background-image: url('Photos/Taj-Mahal-Agra-India30x30.png');
 }
 
+.board {
+    display: inline-block;
+    width: 1150px;
+    height: 1150px;
+}
+
 .hex-row-one {
-    margin-left: 35.274em;
+    margin-left: 232px;
     clear: left;
 }
 
 .hex-row-two {
-    margin-left: 28.2em;
+    margin-left: 121px;
+    margin-right: 121px;
     clear: left;
 }
 
 .hex-row-three {
-    margin-left: 21.15em;
+    margin-left: 10px;
     clear: left;
 }
 
 .hex-row-four {
-    margin-left: 28.1em;
+    margin-left: 121px;
+    margin-right: 121px;
     clear: left;
 }
 
 .hex-row-five {
-    margin-left: 35.03em;
+    margin-left: 232px;
+    margin-right: 232px;
     clear: left;
 }
 
@@ -84,7 +93,7 @@ select, option {
  }
 
  input[type=checkbox] {
-    -webkit-appearance: ;
+    -webkit-appearance: none;
     position: absolute;
     width: 30px;
     height: 30px;
@@ -143,6 +152,56 @@ select, option {
   #checkOne, #checkTwo, #checkThree, #checkFour, #checkFive, #checkSix {
     display: none;
   }
+
+@media screen and (max-width: 1150px) {
+    .board {
+        width: 100vw;
+        height: 100vh;
+    }
+    .hex {
+        width: 17.9vw;
+        height: 10.5vw;
+        margin: 6.1vw .5em 0;
+    }
+    .hex::before {
+        border-bottom: 5vw solid #a6b8bd;
+        border-left: 8.95vw solid transparent;
+        border-right: 8.95vw solid transparent;
+        top: -5vw;
+    }
+
+    .hex::after {
+        border-top: 5vw solid #a6b8bd;
+        border-left: 8.95vw solid transparent;
+        border-right: 8.95vw solid transparent;
+        bottom: -5vw;
+    }
+    .hex-row-one {
+        margin-left: 20.17vw;
+        clear: left;
+    }
+    
+    .hex-row-two {
+        margin-left: 10.52vw;
+        clear: left;
+    }
+    
+    .hex-row-three {
+        margin-left: 8.7vw;
+        clear: left;
+    }
+    
+    .hex-row-four {
+        margin-left: 10.52vw;
+        clear: left;
+    }
+    
+    .hex-row-five {
+        margin-left: 20.17vw;
+        clear: left;
+    }
+    
+}
 /*
  #checkOne {
     right: 197px;
